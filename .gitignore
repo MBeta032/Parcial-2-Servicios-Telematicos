@@ -1,0 +1,5 @@
+.vagrant/
+*.key
+*.log
+capturas/
+2236320.txt
