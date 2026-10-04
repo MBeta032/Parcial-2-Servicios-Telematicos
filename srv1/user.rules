@@ -26,6 +26,9 @@
 ### tuple ### route:allow tcp 21 192.168.50.2 any 0.0.0.0/0 in_eth2!out_eth1
 -A ufw-user-forward -i eth2 -o eth1 -p tcp -d 192.168.50.2 --dport 21 -j ACCEPT
 
+### tuple ### route:allow tcp 22 192.168.50.2 any 0.0.0.0/0 in_eth2!out_eth1
+-A ufw-user-forward -i eth2 -o eth1 -p tcp -d 192.168.50.2 --dport 22 -j ACCEPT
+
 ### END RULES ###
 
 ### LOGGING ###

@@ -16,6 +16,7 @@
 -F POSTROUTING
 -A PREROUTING -i eth2 -p tcp --dport 21 -j DNAT --to-destination 192.168.50.2:21
 -A PREROUTING -i eth2 -p tcp --dport 50000:50010 -j DNAT --to-destination 192.168.50.2
+-A PREROUTING -i eth2 -p tcp --dport 2222 -j DNAT --to-destination 192.168.50.2:22
 -A POSTROUTING -o eth1 -d 192.168.50.2 -j MASQUERADE
 COMMIT
 
